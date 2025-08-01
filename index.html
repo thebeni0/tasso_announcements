@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>July 2025 Device Sales Challenge!</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         
         * {
             margin: 0;
@@ -23,12 +23,12 @@
         .announcement-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 80px 40px;
+            padding: 60px 40px;
             text-align: center;
         }
         
         .hero-section {
-            margin-bottom: 80px;
+            margin-bottom: 60px;
         }
         
         .celebration-badge {
@@ -38,7 +38,7 @@
             padding: 12px 24px;
             border-radius: 30px;
             font-size: 0.9rem;
-            font-weight: 600;
+            font-weight: 700;
             letter-spacing: 0.5px;
             margin-bottom: 30px;
             text-transform: uppercase;
@@ -46,7 +46,7 @@
         
         .main-headline {
             font-size: 3.5rem;
-            font-weight: 700;
+            font-weight: 800;
             color: #1a1a1a;
             margin-bottom: 30px;
             line-height: 1.1;
@@ -57,7 +57,7 @@
             font-size: 1.3rem;
             color: #666;
             margin-bottom: 60px;
-            font-weight: 400;
+            font-weight: 500;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
@@ -65,14 +65,14 @@
         
         .guessing-game {
             background: #f8f9fa;
-            padding: 60px 40px;
-            margin: 60px -40px;
+            padding: 50px 40px;
+            margin: 50px -40px;
             border-radius: 0;
         }
         
         .game-title {
             font-size: 2rem;
-            font-weight: 600;
+            font-weight: 700;
             color: #1a1a1a;
             margin-bottom: 20px;
         }
@@ -81,6 +81,7 @@
             font-size: 1.1rem;
             color: #666;
             margin-bottom: 40px;
+            font-weight: 500;
         }
         
         .flip-cards-grid {
@@ -138,7 +139,7 @@
         
         .guess-number {
             font-size: 2.5rem;
-            font-weight: 300;
+            font-weight: 600;
             color: #0066cc;
             margin-bottom: 10px;
         }
@@ -146,7 +147,7 @@
         .guess-label {
             font-size: 1rem;
             color: #666;
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
@@ -155,18 +156,21 @@
             font-size: 1.2rem;
             line-height: 1.4;
             text-align: center;
+            font-weight: 600;
         }
         
         .correct-answer {
             background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+            color: white !important;
         }
         
         .wrong-answer {
             background: linear-gradient(135deg, #6c757d 0%, #495057 100%) !important;
+            color: white !important;
         }
         
         .reveal-section {
-            margin-top: 60px;
+            margin-top: 40px;
             opacity: 0;
             transform: translateY(20px);
             transition: all 1s ease;
@@ -179,37 +183,37 @@
         
         .actual-number {
             font-size: 4rem;
-            font-weight: 300;
+            font-weight: 600;
             color: #0066cc;
             margin: 20px 0;
             letter-spacing: -0.02em;
         }
         
         .impact-section {
-            margin: 80px 0;
+            margin: 60px 0;
             text-align: left;
         }
         
         .impact-title {
             font-size: 2rem;
-            font-weight: 600;
+            font-weight: 700;
             color: #1a1a1a;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             text-align: center;
         }
         
         .impact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            max-width: 1000px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 900px;
             margin: 0 auto;
         }
         
         .impact-item {
             display: flex;
             align-items: flex-start;
-            padding: 30px;
+            padding: 25px;
             background: white;
             border: 1px solid #e6e6e6;
             border-radius: 8px;
@@ -250,10 +254,79 @@
             line-height: 1.5;
         }
         
-        .patient-voices-section {
-            margin: 80px 0;
+        .team-appreciation-section {
+            margin: 60px 0;
+            text-align: center;
+        }
+        
+        .appreciation-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .appreciation-text {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .value-item {
+            text-align: center;
+            padding: 25px 15px;
             background: #f8f9fa;
-            padding: 80px 40px;
+            border-radius: 12px;
+            border: 1px solid #e6e6e6;
+            transition: all 0.3s ease;
+        }
+        
+        .value-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: #0066cc;
+        }
+        
+        .value-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .value-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0066cc;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .value-description {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .closing-appreciation {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.7;
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 12px;
+            border-left: 5px solid #0066cc;
+        }
+            margin: 60px 0;
+            background: #f8f9fa;
+            padding: 60px 40px;
             margin-left: -40px;
             margin-right: -40px;
         }
@@ -291,8 +364,8 @@
         .closing-section {
             background: linear-gradient(135deg, #0066cc 0%, #004d99 100%);
             color: white;
-            padding: 60px 40px;
-            margin: 80px -40px 0;
+            padding: 50px 40px;
+            margin: 60px -40px 0;
             border-radius: 0;
         }
         
@@ -301,12 +374,13 @@
             line-height: 1.6;
             max-width: 700px;
             margin: 0 auto;
+            font-weight: 500;
         }
         
         .closing-cta {
             font-size: 1.1rem;
             margin-top: 30px;
-            font-weight: 500;
+            font-weight: 600;
             opacity: 0.9;
         }
         
@@ -358,7 +432,7 @@
             <div class="celebration-badge">July 2025 Global Milestone</div>
             
             <h1 class="main-headline">
-                Guess Our New Monthly Record!
+                Guess Our New Monthly Record
             </h1>
             
             <p class="subtitle">
@@ -433,15 +507,7 @@
                     <div class="impact-icon">🏠</div>
                     <div class="impact-content">
                         <div class="impact-number">106,000</div>
-                        <div class="impact-description">Patients avoided trips to collection centers, collecting samples from the comfort of home</div>
-                    </div>
-                </div>
-                
-                <div class="impact-item">
-                    <div class="impact-icon">⏱️</div>
-                    <div class="impact-content">
-                        <div class="impact-number">265,000+</div>
-                        <div class="impact-description">Hours saved by eliminating travel time, waiting rooms, and appointment scheduling</div>
+                        <div class="impact-description">Patients avoided trips to collection centers, collecting samples from home</div>
                     </div>
                 </div>
                 
@@ -449,7 +515,7 @@
                     <div class="impact-icon">😌</div>
                     <div class="impact-content">
                         <div class="impact-number">Zero</div>
-                        <div class="impact-description">Needle anxiety—every single collection was virtually painless</div>
+                        <div class="impact-description">Needle anxiety—every collection was virtually painless</div>
                     </div>
                 </div>
                 
@@ -457,23 +523,15 @@
                     <div class="impact-icon">🎯</div>
                     <div class="impact-content">
                         <div class="impact-number">97%+</div>
-                        <div class="impact-description">Self-use success rate, proving our technology works reliably at scale</div>
+                        <div class="impact-description">Self-use success rate—our technology works reliably at scale</div>
                     </div>
                 </div>
                 
                 <div class="impact-item">
                     <div class="impact-icon">🌍</div>
                     <div class="impact-content">
-                        <div class="impact-number">Unlimited</div>
-                        <div class="impact-description">Geographic reach—from urban centers to remote areas previously underserved</div>
-                    </div>
-                </div>
-                
-                <div class="impact-item">
-                    <div class="impact-icon">📈</div>
-                    <div class="impact-content">
-                        <div class="impact-number">95%+</div>
-                        <div class="impact-description">Lab success rate, delivering reliable results that clinicians trust</div>
+                        <div class="impact-number">Global</div>
+                        <div class="impact-description">Reach from urban centers to remote areas previously underserved</div>
                     </div>
                 </div>
             </div>
@@ -501,6 +559,8 @@
         <div class="closing-section">
             <div class="closing-message">
                 From Randox in the UK to Catapult Health across America, from Thriva's needle-phobic patients to clinical trial participants worldwide—every device represents someone who experienced healthcare differently. By sea and air, through our global supply chain, we're not just shipping devices; we're delivering hope, convenience, and better health outcomes.
+                
+                <br><br><strong>Most importantly, thank you to our incredible team who lives our values every day—putting Patients First, Working Together, Making it Happen, Innovating relentlessly, and always Doing the Right Thing. This milestone is a testament to what we achieve when we stay true to our mission.</strong>
             </div>
             <div class="closing-cta">
                 Here's to expanding access even further in August and beyond.
