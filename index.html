@@ -27,6 +27,21 @@
             text-align: center;
         }
         
+        .header-section {
+            padding: 40px 0 20px 0;
+            text-align: center;
+        }
+        
+        .logo-container {
+            margin-bottom: 20px;
+        }
+        
+        .tasso-logo {
+            height: 60px;
+            width: auto;
+            max-width: 300px;
+        }
+        
         .hero-section {
             margin-bottom: 60px;
         }
@@ -384,9 +399,13 @@
             opacity: 0.9;
         }
         
-        @media (max-width: 768px) {
+            @media (max-width: 768px) {
             .announcement-container {
                 padding: 60px 20px;
+            }
+            
+            .tasso-logo {
+                height: 50px;
             }
             
             .main-headline {
@@ -428,6 +447,12 @@
 </head>
 <body>
     <div class="announcement-container">
+        <div class="header-section">
+            <div class="logo-container">
+                <img src="https://images.squarespace-cdn.com/content/60da6eca05215e687a479088/1944a07f-f071-4da3-a219-b2b8e53a547e/Tasso+Logo+Lock+up+-+Red+%2B+Blue.png?format=1500w&content-type=image%2Fpng" alt="Tasso Logo" class="tasso-logo">
+            </div>
+        </div>
+        
         <div class="hero-section">
             <div class="celebration-badge">July 2025 Global Milestone</div>
             
@@ -478,7 +503,7 @@
                 <div class="flip-card" onclick="flipCard(this, false)">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <div class="guess-number">123K</div>
+                            <div class="guess-number">113K</div>
                             <div class="guess-label">Devices</div>
                         </div>
                         <div class="flip-card-back wrong-answer">
@@ -504,34 +529,34 @@
             
             <div class="impact-grid">
                 <div class="impact-item">
-                    <div class="impact-icon">🏠</div>
+                    <div class="impact-icon">⏱️</div>
                     <div class="impact-content">
-                        <div class="impact-number">106,000</div>
-                        <div class="impact-description">Patients avoided trips to collection centers, collecting samples from home</div>
+                        <div class="impact-number">265,000+</div>
+                        <div class="impact-description">Hours of patient time saved by eliminating travel, waiting rooms, and appointments</div>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">🩸</div>
+                    <div class="impact-content">
+                        <div class="impact-number">2,650</div>
+                        <div class="impact-description">Gallons of blood collected efficiently without waste from failed venipuncture attempts</div>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">🌱</div>
+                    <div class="impact-content">
+                        <div class="impact-number">318,000</div>
+                        <div class="impact-description">Pounds of CO₂ saved by eliminating patient trips to collection centers</div>
                     </div>
                 </div>
                 
                 <div class="impact-item">
                     <div class="impact-icon">😌</div>
                     <div class="impact-content">
-                        <div class="impact-number">Zero</div>
-                        <div class="impact-description">Needle anxiety—every collection was virtually painless</div>
-                    </div>
-                </div>
-                
-                <div class="impact-item">
-                    <div class="impact-icon">🎯</div>
-                    <div class="impact-content">
-                        <div class="impact-number">97%+</div>
-                        <div class="impact-description">Self-use success rate—our technology works reliably at scale</div>
-                    </div>
-                </div>
-                
-                <div class="impact-item">
-                    <div class="impact-icon">🌍</div>
-                    <div class="impact-content">
-                        <div class="impact-number">Global</div>
-                        <div class="impact-description">Reach from urban centers to remote areas previously underserved</div>
+                        <div class="impact-number">5,300</div>
+                        <div class="impact-description">People avoided vasovagal syncope (fainting) during blood collection</div>
                     </div>
                 </div>
             </div>
